@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,6 +25,11 @@
         <li><a href="#testimonials">Reviews</a></li>
         <li><a href="#contact" class="btn btn--nav">Get a Quote</a></li>
       </ul>
+      <div class="lang-switcher">
+        <a href="index.html" class="lang-switcher__btn lang-switcher__btn--active" aria-current="true">EN</a>
+        <span class="lang-switcher__divider">|</span>
+        <a href="index-fr.html" class="lang-switcher__btn">FR</a>
+      </div>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -333,8 +338,13 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <div class="container">
+      <div class="container footer__bottom-inner">
         <p>&copy; 2026 CrystalClear Pool Services. All rights reserved.</p>
+        <div class="lang-switcher lang-switcher--footer">
+          <a href="index.html" class="lang-switcher__btn lang-switcher__btn--active" aria-current="true">EN</a>
+          <span class="lang-switcher__divider">|</span>
+          <a href="index-fr.html" class="lang-switcher__btn">FR</a>
+        </div>
       </div>
     </div>
   </footer>

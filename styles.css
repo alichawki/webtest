@@ -179,6 +179,75 @@ ul { list-style: none; }
 .nav.scrolled .nav__toggle span { background: var(--color-text); }
 
 /* ===========================
+   Language Switcher
+=========================== */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lang-switcher__btn {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  color: rgba(255,255,255,.65);
+  padding: 4px 2px;
+  transition: color var(--transition);
+  line-height: 1;
+}
+.lang-switcher__btn:hover {
+  color: var(--color-white);
+}
+.lang-switcher__btn--active {
+  color: var(--color-white);
+  border-bottom: 2px solid rgba(255,255,255,.8);
+}
+
+.nav.scrolled .lang-switcher__btn {
+  color: var(--color-text-muted);
+}
+.nav.scrolled .lang-switcher__btn:hover {
+  color: var(--color-primary);
+}
+.nav.scrolled .lang-switcher__btn--active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+}
+
+.lang-switcher__divider {
+  font-size: 12px;
+  color: rgba(255,255,255,.3);
+  user-select: none;
+}
+.nav.scrolled .lang-switcher__divider {
+  color: var(--color-border);
+}
+
+/* Footer language switcher */
+.lang-switcher--footer .lang-switcher__btn {
+  color: rgba(255,255,255,.35);
+}
+.lang-switcher--footer .lang-switcher__btn:hover {
+  color: var(--color-white);
+}
+.lang-switcher--footer .lang-switcher__btn--active {
+  color: rgba(255,255,255,.85);
+  border-bottom-color: rgba(255,255,255,.5);
+}
+.lang-switcher--footer .lang-switcher__divider {
+  color: rgba(255,255,255,.2);
+}
+
+.footer__bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ===========================
    Hero
 =========================== */
 .hero {
